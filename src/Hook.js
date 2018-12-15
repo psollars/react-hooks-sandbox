@@ -5,7 +5,7 @@ export default function Hook() {
   const [enabled, toggleFeature] = useState(false);
 
   return (
-    <div>
+    <>
       <p>{count}</p>
       <button onClick={() => incrementCounter(count => count + 1)}>
         Count it 👆
@@ -15,6 +15,6 @@ export default function Hook() {
       <button onClick={() => toggleFeature(enabled => !enabled)}>
         Toggle it 🎚
       </button>
-    </div>
+    </>
   );
 }
